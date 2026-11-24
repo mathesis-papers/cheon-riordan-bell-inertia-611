@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 74063,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "f5ca39ea52a83175404fbeea09d24d790efe0c9b452db8344f4db39a83af22e6",
+      "sha256": "f5ca39ea52a83175404fbeea09d24d790efe0c9b452db8344f4db39a83af22e6"
+    },
+    "source": {
+      "bytes": 13616,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "afaa8ca5539f0eb34a2db472f35eee2806be746208ad2af8546fb27a75141883",
+      "sha256": "afaa8ca5539f0eb34a2db472f35eee2806be746208ad2af8546fb27a75141883"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Extending Mwafise's five-cycle example (26 October 2026, v1.0.0, README §4.4), we answer Problem 6.11 of Cheon, Jung, Kitaev and Mojallal, Riordan graphs II: Spectral properties, arXiv:1801.07021v1 (2018), p. 25, negatively: G_5(1+z^3,z(1+z^3)) is C_5 with inertia (3,2,0). The construction G_n(1+z^{n-2},z(1+z^{n-2}))=C_n yields counterexamples at every order 4q+1>=5. We prove minimality among all simple graphs, extend their even-series criterion to a finite-prefix characterization of bipartiteness for proper Bell-type graphs, and show that their absolute inertia bound is sharp at every order n>=2.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "79dfe4f731baccd42dd3c56cf6331a0ddd3cafdb",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/79dfe4f731baccd42dd3c56cf6331a0ddd3cafdb/D5/S3/Combinatorics/SpectralGraph/RiordanBellInertiaRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 74063,
+      "sha256": "f5ca39ea52a83175404fbeea09d24d790efe0c9b452db8344f4db39a83af22e6",
+      "url": "/api/v1/collected-papers/cheon-riordan-bell-inertia-611/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-24T02:38:05.008486167Z",
+    "record": "cheon-riordan-bell-inertia-611",
+    "repository_name": "cheon-riordan-bell-inertia-611",
+    "source": {
+      "bytes": 13616,
+      "sha256": "afaa8ca5539f0eb34a2db472f35eee2806be746208ad2af8546fb27a75141883",
+      "url": "/api/v1/collected-papers/cheon-riordan-bell-inertia-611/files/source?version=3"
+    },
+    "title": "Extending Mwafise's cycle example to answer Cheon–Jung–Kitaev–Mojallal's Bell-type Riordan inertia question",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-24T02:38:05.008486167Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "cheon-riordan-bell-inertia-611"
+  }
+}

@@ -1,0 +1,967 @@
+{
+  "absolute_bound_sharpness": [
+    {
+      "inertia": [
+        1,
+        1,
+        0
+      ],
+      "order": 2
+    },
+    {
+      "inertia": [
+        1,
+        2,
+        0
+      ],
+      "order": 3
+    },
+    {
+      "inertia": [
+        2,
+        2,
+        0
+      ],
+      "order": 4
+    },
+    {
+      "inertia": [
+        3,
+        2,
+        0
+      ],
+      "order": 5
+    },
+    {
+      "inertia": [
+        3,
+        3,
+        0
+      ],
+      "order": 6
+    },
+    {
+      "inertia": [
+        3,
+        4,
+        0
+      ],
+      "order": 7
+    },
+    {
+      "inertia": [
+        4,
+        4,
+        0
+      ],
+      "order": 8
+    },
+    {
+      "inertia": [
+        5,
+        4,
+        0
+      ],
+      "order": 9
+    },
+    {
+      "inertia": [
+        5,
+        5,
+        0
+      ],
+      "order": 10
+    },
+    {
+      "inertia": [
+        5,
+        6,
+        0
+      ],
+      "order": 11
+    },
+    {
+      "inertia": [
+        6,
+        6,
+        0
+      ],
+      "order": 12
+    },
+    {
+      "inertia": [
+        7,
+        6,
+        0
+      ],
+      "order": 13
+    },
+    {
+      "inertia": [
+        7,
+        7,
+        0
+      ],
+      "order": 14
+    },
+    {
+      "inertia": [
+        7,
+        8,
+        0
+      ],
+      "order": 15
+    },
+    {
+      "inertia": [
+        8,
+        8,
+        0
+      ],
+      "order": 16
+    },
+    {
+      "inertia": [
+        9,
+        8,
+        0
+      ],
+      "order": 17
+    },
+    {
+      "inertia": [
+        9,
+        9,
+        0
+      ],
+      "order": 18
+    },
+    {
+      "inertia": [
+        9,
+        10,
+        0
+      ],
+      "order": 19
+    },
+    {
+      "inertia": [
+        10,
+        10,
+        0
+      ],
+      "order": 20
+    },
+    {
+      "inertia": [
+        11,
+        10,
+        0
+      ],
+      "order": 21
+    },
+    {
+      "inertia": [
+        11,
+        11,
+        0
+      ],
+      "order": 22
+    },
+    {
+      "inertia": [
+        11,
+        12,
+        0
+      ],
+      "order": 23
+    },
+    {
+      "inertia": [
+        12,
+        12,
+        0
+      ],
+      "order": 24
+    },
+    {
+      "inertia": [
+        13,
+        12,
+        0
+      ],
+      "order": 25
+    },
+    {
+      "inertia": [
+        13,
+        13,
+        0
+      ],
+      "order": 26
+    },
+    {
+      "inertia": [
+        13,
+        14,
+        0
+      ],
+      "order": 27
+    },
+    {
+      "inertia": [
+        14,
+        14,
+        0
+      ],
+      "order": 28
+    },
+    {
+      "inertia": [
+        15,
+        14,
+        0
+      ],
+      "order": 29
+    },
+    {
+      "inertia": [
+        15,
+        15,
+        0
+      ],
+      "order": 30
+    },
+    {
+      "inertia": [
+        15,
+        16,
+        0
+      ],
+      "order": 31
+    },
+    {
+      "inertia": [
+        16,
+        16,
+        0
+      ],
+      "order": 32
+    },
+    {
+      "inertia": [
+        17,
+        16,
+        0
+      ],
+      "order": 33
+    },
+    {
+      "inertia": [
+        17,
+        17,
+        0
+      ],
+      "order": 34
+    },
+    {
+      "inertia": [
+        17,
+        18,
+        0
+      ],
+      "order": 35
+    },
+    {
+      "inertia": [
+        18,
+        18,
+        0
+      ],
+      "order": 36
+    },
+    {
+      "inertia": [
+        19,
+        18,
+        0
+      ],
+      "order": 37
+    },
+    {
+      "inertia": [
+        19,
+        19,
+        0
+      ],
+      "order": 38
+    },
+    {
+      "inertia": [
+        19,
+        20,
+        0
+      ],
+      "order": 39
+    },
+    {
+      "inertia": [
+        20,
+        20,
+        0
+      ],
+      "order": 40
+    },
+    {
+      "inertia": [
+        21,
+        20,
+        0
+      ],
+      "order": 41
+    },
+    {
+      "inertia": [
+        21,
+        21,
+        0
+      ],
+      "order": 42
+    },
+    {
+      "inertia": [
+        21,
+        22,
+        0
+      ],
+      "order": 43
+    },
+    {
+      "inertia": [
+        22,
+        22,
+        0
+      ],
+      "order": 44
+    },
+    {
+      "inertia": [
+        23,
+        22,
+        0
+      ],
+      "order": 45
+    },
+    {
+      "inertia": [
+        23,
+        23,
+        0
+      ],
+      "order": 46
+    },
+    {
+      "inertia": [
+        23,
+        24,
+        0
+      ],
+      "order": 47
+    },
+    {
+      "inertia": [
+        24,
+        24,
+        0
+      ],
+      "order": 48
+    },
+    {
+      "inertia": [
+        25,
+        24,
+        0
+      ],
+      "order": 49
+    }
+  ],
+  "all_binary_prefixes": [
+    {
+      "binary_prefixes": 1,
+      "even_series_equal_inertia": 1,
+      "order": 1,
+      "positive_exceeds_negative": 0
+    },
+    {
+      "binary_prefixes": 2,
+      "even_series_equal_inertia": 2,
+      "order": 2,
+      "positive_exceeds_negative": 0
+    },
+    {
+      "binary_prefixes": 4,
+      "even_series_equal_inertia": 2,
+      "order": 3,
+      "positive_exceeds_negative": 0
+    },
+    {
+      "binary_prefixes": 8,
+      "even_series_equal_inertia": 4,
+      "order": 4,
+      "positive_exceeds_negative": 0
+    },
+    {
+      "binary_prefixes": 16,
+      "even_series_equal_inertia": 4,
+      "order": 5,
+      "positive_exceeds_negative": 1
+    },
+    {
+      "binary_prefixes": 32,
+      "even_series_equal_inertia": 8,
+      "order": 6,
+      "positive_exceeds_negative": 0
+    },
+    {
+      "binary_prefixes": 64,
+      "even_series_equal_inertia": 8,
+      "order": 7,
+      "positive_exceeds_negative": 5
+    },
+    {
+      "binary_prefixes": 128,
+      "even_series_equal_inertia": 16,
+      "order": 8,
+      "positive_exceeds_negative": 3
+    }
+  ],
+  "all_simple_graphs_minimality": [
+    {
+      "labelled_simple_graphs": 1,
+      "order": 1
+    },
+    {
+      "labelled_simple_graphs": 2,
+      "order": 2
+    },
+    {
+      "labelled_simple_graphs": 8,
+      "order": 3
+    },
+    {
+      "labelled_simple_graphs": 64,
+      "order": 4
+    }
+  ],
+  "arithmetic": "integers and exact rational Schur complements",
+  "cycle_family": [
+    {
+      "inertia": [
+        1,
+        2,
+        0
+      ],
+      "order": 3
+    },
+    {
+      "inertia": [
+        1,
+        1,
+        2
+      ],
+      "order": 4
+    },
+    {
+      "inertia": [
+        3,
+        2,
+        0
+      ],
+      "order": 5
+    },
+    {
+      "inertia": [
+        3,
+        3,
+        0
+      ],
+      "order": 6
+    },
+    {
+      "inertia": [
+        3,
+        4,
+        0
+      ],
+      "order": 7
+    },
+    {
+      "inertia": [
+        3,
+        3,
+        2
+      ],
+      "order": 8
+    },
+    {
+      "inertia": [
+        5,
+        4,
+        0
+      ],
+      "order": 9
+    },
+    {
+      "inertia": [
+        5,
+        5,
+        0
+      ],
+      "order": 10
+    },
+    {
+      "inertia": [
+        5,
+        6,
+        0
+      ],
+      "order": 11
+    },
+    {
+      "inertia": [
+        5,
+        5,
+        2
+      ],
+      "order": 12
+    },
+    {
+      "inertia": [
+        7,
+        6,
+        0
+      ],
+      "order": 13
+    },
+    {
+      "inertia": [
+        7,
+        7,
+        0
+      ],
+      "order": 14
+    },
+    {
+      "inertia": [
+        7,
+        8,
+        0
+      ],
+      "order": 15
+    },
+    {
+      "inertia": [
+        7,
+        7,
+        2
+      ],
+      "order": 16
+    },
+    {
+      "inertia": [
+        9,
+        8,
+        0
+      ],
+      "order": 17
+    },
+    {
+      "inertia": [
+        9,
+        9,
+        0
+      ],
+      "order": 18
+    },
+    {
+      "inertia": [
+        9,
+        10,
+        0
+      ],
+      "order": 19
+    },
+    {
+      "inertia": [
+        9,
+        9,
+        2
+      ],
+      "order": 20
+    },
+    {
+      "inertia": [
+        11,
+        10,
+        0
+      ],
+      "order": 21
+    },
+    {
+      "inertia": [
+        11,
+        11,
+        0
+      ],
+      "order": 22
+    },
+    {
+      "inertia": [
+        11,
+        12,
+        0
+      ],
+      "order": 23
+    },
+    {
+      "inertia": [
+        11,
+        11,
+        2
+      ],
+      "order": 24
+    },
+    {
+      "inertia": [
+        13,
+        12,
+        0
+      ],
+      "order": 25
+    },
+    {
+      "inertia": [
+        13,
+        13,
+        0
+      ],
+      "order": 26
+    },
+    {
+      "inertia": [
+        13,
+        14,
+        0
+      ],
+      "order": 27
+    },
+    {
+      "inertia": [
+        13,
+        13,
+        2
+      ],
+      "order": 28
+    },
+    {
+      "inertia": [
+        15,
+        14,
+        0
+      ],
+      "order": 29
+    },
+    {
+      "inertia": [
+        15,
+        15,
+        0
+      ],
+      "order": 30
+    },
+    {
+      "inertia": [
+        15,
+        16,
+        0
+      ],
+      "order": 31
+    },
+    {
+      "inertia": [
+        15,
+        15,
+        2
+      ],
+      "order": 32
+    },
+    {
+      "inertia": [
+        17,
+        16,
+        0
+      ],
+      "order": 33
+    },
+    {
+      "inertia": [
+        17,
+        17,
+        0
+      ],
+      "order": 34
+    },
+    {
+      "inertia": [
+        17,
+        18,
+        0
+      ],
+      "order": 35
+    },
+    {
+      "inertia": [
+        17,
+        17,
+        2
+      ],
+      "order": 36
+    },
+    {
+      "inertia": [
+        19,
+        18,
+        0
+      ],
+      "order": 37
+    },
+    {
+      "inertia": [
+        19,
+        19,
+        0
+      ],
+      "order": 38
+    },
+    {
+      "inertia": [
+        19,
+        20,
+        0
+      ],
+      "order": 39
+    },
+    {
+      "inertia": [
+        19,
+        19,
+        2
+      ],
+      "order": 40
+    },
+    {
+      "inertia": [
+        21,
+        20,
+        0
+      ],
+      "order": 41
+    },
+    {
+      "inertia": [
+        21,
+        21,
+        0
+      ],
+      "order": 42
+    },
+    {
+      "inertia": [
+        21,
+        22,
+        0
+      ],
+      "order": 43
+    },
+    {
+      "inertia": [
+        21,
+        21,
+        2
+      ],
+      "order": 44
+    },
+    {
+      "inertia": [
+        23,
+        22,
+        0
+      ],
+      "order": 45
+    },
+    {
+      "inertia": [
+        23,
+        23,
+        0
+      ],
+      "order": 46
+    },
+    {
+      "inertia": [
+        23,
+        24,
+        0
+      ],
+      "order": 47
+    },
+    {
+      "inertia": [
+        23,
+        23,
+        2
+      ],
+      "order": 48
+    },
+    {
+      "inertia": [
+        25,
+        24,
+        0
+      ],
+      "order": 49
+    }
+  ],
+  "equal_inertia_nonbipartite": {
+    "adjacency": [
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "determinant": 1,
+    "inertia": [
+      2,
+      2,
+      0
+    ]
+  },
+  "proper_prefix_bipartiteness_cases": 128,
+  "witness": {
+    "adjacency": [
+      [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "adjacency_determinant": 2,
+    "change_determinant": 4,
+    "change_of_basis": [
+      [
+        1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "coefficients": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "congruence_diagonal": [
+      2,
+      -2,
+      2,
+      -2,
+      2
+    ],
+    "inertia": [
+      3,
+      2,
+      0
+    ],
+    "order": 5
+  }
+}

@@ -1,0 +1,316 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,longtable}
+\usepackage[margin=0.9in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\np}{n^+}
+\newcommand{\nm}{n^-}
+\title{Extending Mwafise's cycle example to answer\protect\\
+Cheon--Jung--Kitaev--Mojallal's\protect\\
+Bell-type Riordan inertia question}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\
+\small ChronoAI Pte Ltd, Singapore}
+\date{18 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Extending Mwafise's five-cycle example (26 October 2026,
+v1.0.0, README \S4.4), we answer Problem 6.11 of
+Cheon, Jung, Kitaev and Mojallal,
+\emph{Riordan graphs II: Spectral properties}, arXiv:1801.07021v1
+(2018), p.~25, negatively: the proper Bell-type graph
+$G_5(1+z^3,z(1+z^3))$ is the five-cycle and has three positive and two
+negative adjacency eigenvalues. More generally, $G_n(1+z^{n-2},z(1+z^{n-2}))$
+is the cycle $C_n$ for every $n\geq3$, so counterexamples occur at every
+order $4q+1$ with $q\geq1$. We give the coefficient calculation, the full
+cycle inertia formula, and an integer congruence certificate for the
+five-vertex example. We also prove minimality among all simple graphs,
+extend the authors' even-series criterion to a finite-prefix
+characterization of bipartiteness for proper Bell-type graphs, and show
+that their absolute inertia bound is sharp at every order $n\geq2$.
+\end{abstract}
+
+\section{The question and the coefficient convention}
+Cheon, Jung, Kitaev and Mojallal pose Problem 6.11
+\cite[p.~25]{CJKM}:
+\begin{quote}
+Is it true that $n^+\leq n^-$ for any Riordan graph $G_n(g,zg)$?
+\end{quote}
+Here $\np(A)$ and $\nm(A)$ count the strictly positive and strictly negative
+eigenvalues of a real symmetric matrix $A$, with algebraic multiplicity;
+$n^0(A)$ counts the zero eigenvalues.
+Their preceding even-series observation gives $\np=\nm$ in that
+special case. The coefficient calculation below places the five-cycle,
+with the opposite strict inequality, inside the proper Bell class.
+
+Write $\Z[[z]]$ for integer formal power series and $[z^r]h(z)$ for
+the coefficient of $z^r$ in $h$. For $g\in\Z[[z]]$ and $f=zg$, the
+graph $G_n(g,f)$ has vertex labels $1,\ldots,n$, zero diagonal adjacency
+matrix $A$, and, for $1\leq j<i\leq n$,
+\begin{equation}\label{eq:coefficient}
+ A_{ij}=A_{ji}\in\{0,1\},\qquad
+ A_{ij}\equiv[z^{i-2}]g(z)f(z)^{j-1}
+ =[z^{i-j-1}]g(z)^j\pmod2.
+\end{equation}
+This is Definition 2.2 and equation (2) of \cite[p.~3]{CJKM}.
+Only the binary coefficients of $g$ through degree $n-2$ affect $A$.
+The graph is proper when $g(0)$ is odd; then consecutive labels are
+adjacent \cite[Definition 2.3, p.~4]{CJKM}. Our examples have $g(0)=1$.
+A cycle $C_n$, for $n\geq3$, has edges
+$\{1,2\},\ldots,\{n-1,n\},\{n,1\}$.
+
+Mwafise's earlier example \cite[README \S4.4]{Mwafise} gives the
+same labelled five-cycle as $G_5(1+z^3,z)$. At order five only
+$f\bmod z^4$ affects adjacency, and $z(1+z^3)\equiv z\pmod{z^4}$.
+Thus that example is also a proper Bell-type graph. Its displayed
+edges are $12,15,23,34,45$; our inertia calculation answers the question,
+and the next theorem extends the construction to every cycle order.
+
+\section{Cycles inside the Bell class}
+\begin{theorem}\label{thm:cycles}
+For every integer $n\geq3$, put $g_n(z)=1+z^{n-2}$ and $f_n(z)=zg_n(z)$.
+Then $G_n(g_n,f_n)=C_n$ with the stated labels. Conversely, a generator
+gives this labelled cycle only if its binary coefficients through degree
+$n-2$ agree with $1+z^{n-2}$. Write $n=4q+r$,
+where $q=\lfloor n/4\rfloor$ and $0\leq r\leq3$. Then
+its inertia is as follows, for every row with $n\geq3$:
+\[
+\begin{array}{c|ccc}
+ r&\np&\nm&n^0\\\hline
+ 0&2q-1&2q-1&2\\
+ 1&2q+1&2q&0\\
+ 2&2q+1&2q+1&0\\
+ 3&2q+1&2q+2&0
+\end{array}
+\]
+\end{theorem}
+\begin{proof}
+Let $d=n-2\geq1$. For a lower-triangular entry set $r'=i-j-1$.
+Then $0\leq r'\leq d$. The expansion
+$(1+z^d)^j=\sum_{t=0}^j\binom jt z^{dt}$ has constant coefficient $1$,
+has coefficient $j$ at degree $d$, and has no terms of degrees
+$1,\ldots,d-1$. Thus $r'=0$ gives exactly the path edges $i=j+1$.
+The only possible entry with $r'=d$ has $i=j+n-1\leq n$, hence
+$j=1$ and $i=n$; its coefficient is $1$.
+All other lower entries vanish. This proves the cycle identity,
+including the case $d=1$, when the intervening range is empty.
+Conversely, $A_{i1}\equiv[z^{i-2}]g$ forces exactly that binary prefix
+from the first column of the labelled cycle.
+
+For completeness, the standard cycle-spectrum calculation
+\cite[\S1.4.3]{BH} is short. Put $\zeta=e^{2\pi\mathrm{i}/n}$.
+For $k=0,\ldots,n-1$, the vector with entries $\zeta^{k\ell}$,
+$\ell=0,\ldots,n-1$, is an eigenvector of the cycle adjacency matrix
+with eigenvalue
+\[
+ \zeta^k+\zeta^{-k}=2\cos(2\pi k/n).
+\]
+The geometric-sum identity makes these $n$ vectors mutually
+orthogonal, so this list includes all eigenvalues with multiplicity.
+The eigenvalue is positive when $k<n/4$ or $k>3n/4$, negative when
+$n/4<k<3n/4$, and zero precisely at $k=n/4,3n/4$ when $4\mid n$.
+Counting integers $0\leq k<n$ in these intervals gives the table.
+\end{proof}
+
+\begin{corollary}\label{cor:answer}
+Problem 6.11 has a negative answer. At every order $n=4q+1$,
+$q\geq1$, a proper Bell-type graph has $\np=2q+1>2q=\nm$.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:cycles} with $n=4q+1$.
+\end{proof}
+
+An entirely rational certificate makes the first example explicit.
+For $n=5$, $g=1+z^3$, the lower-triangle coefficient rows in
+\eqref{eq:coefficient}, before reduction modulo two, are
+\[
+ (1),\quad (0,1),\quad (0,0,1),\quad (1,0,0,1).
+\]
+Thus
+\[
+A=\begin{pmatrix}
+0&1&0&0&1\\1&0&1&0&0\\0&1&0&1&0\\0&0&1&0&1\\1&0&0&1&0
+\end{pmatrix},\qquad
+B=\begin{pmatrix}
+1&1&-1&-1&1\\1&-1&0&0&-1\\0&0&1&1&-1\\0&0&1&-1&1\\0&0&0&0&1
+\end{pmatrix}.
+\]
+Direct multiplication gives
+\begin{equation}\label{eq:certificate}
+ \det B=4,\qquad B^{\mathsf T}AB=\operatorname{diag}(2,-2,2,-2,2).
+\end{equation}
+Since $B$ is invertible, this change of variables in the real quadratic
+form preserves inertia, giving $(\np,\nm,n^0)=(3,2,0)$.
+Equivalently, the positive index is the maximum dimension of a subspace
+on which the form is positive definite, which an invertible change of
+variables preserves; the same argument applies to the negative index.
+
+\begin{proposition}\label{prop:minimal}
+Every simple graph on at most four vertices satisfies $\np\leq\nm$.
+Thus five is the smallest possible counterexample order.
+\end{proposition}
+\begin{proof}
+A nonzero adjacency matrix has trace zero and eigenvalues of both
+strict signs. If $\np>\nm$ at an order at most four, there is exactly
+one negative eigenvalue $-s$ and at least two positive eigenvalues
+$a_1,\ldots,a_t$. The trace gives $s=\sum a_i$, so
+$\operatorname{tr}(A^3)=\sum a_i^3-(\sum a_i)^3<0$.
+But $\operatorname{tr}(A^3)$ is six times the number of triangles.
+The zero adjacency matrix has both indices zero.
+\end{proof}
+
+\begin{corollary}[The absolute bound and its sharpness]\label{cor:bound}
+Every Bell-type graph satisfies
+$\max\{\np,\nm\}\leq\lceil n/2\rceil$, as proved in
+\cite[Corollary 6.6, p.~24]{CJKM}. For every $n\geq2$ the bound is
+attained by a proper Bell-type graph. If $n$ is even and the graph is
+nonsingular, then $\np=\nm=n/2$.
+\end{corollary}
+\begin{proof}
+Modulo two, $g^j$ has only even powers when $j$ is even, so
+\eqref{eq:coefficient} vanishes when both labels are even.
+The coordinate space on the $\lfloor n/2\rfloor$ even labels is a
+zero subspace for the quadratic form. A positive or negative definite
+subspace intersects it only in zero, proving the bound by dimension.
+In the nonsingular even-order case the indices sum to $n$, forcing
+equality. For odd $n\geq3$, Theorem~\ref{thm:cycles} attains the bound.
+For even $n$, use $G_n(1,z)=P_n$. Expansion at an end vertex gives
+adjacency determinant $D_n=-D_{n-2}$, $D_0=1$, $D_1=0$.
+Thus $P_n$ is nonsingular and its bipartition pairs eigenvalues of
+opposite sign, giving $\np=\nm=n/2$.
+\end{proof}
+
+\section{The parity case and its converse}
+\begin{proposition}\label{prop:even}
+For $n\geq1$ and odd $g(0)$, $G_n(g,zg)$ is bipartite if and only if
+every odd-degree coefficient $[z^d]g$, $1\leq d\leq n-2$, is even.
+Then $\np=\nm$. For arbitrary $g(0)$ the coefficient condition is
+still sufficient for bipartiteness and equality of the strict indices.
+\end{proposition}
+\begin{proof}
+Under this coefficient condition, each $g^j$ through degree $n-2$
+contains only even powers modulo two. Therefore
+\eqref{eq:coefficient} can be nonzero only if $i-j-1$ is even, that is,
+if $i$ and $j$ have opposite parity. With
+$D=\operatorname{diag}((-1)^1,\ldots,(-1)^n)$, this says $DAD=-A$.
+The invertible map $v\mapsto Dv$ pairs the eigenspaces for $\lambda$
+and $-\lambda$, proving equality of the strict sign counts.
+Conversely, odd $g(0)$ makes all consecutive labels adjacent.
+The spanning path forces every bipartition to alternate along the
+labels. An odd $d\leq n-2$ with odd coefficient would give the
+first-column edge $\{1,d+2\}$ between two odd labels, a contradiction.
+For $n=1,2$ the condition is empty and the conclusion holds directly.
+\end{proof}
+This recovers the even-series case cited immediately before
+Problem 6.11 in \cite{CJKM}, and makes its dependence on the binary
+coefficients explicit. At $n=5$, $1+z^3$ violates the coefficient
+condition. The finite-prefix converse extends the authors' parity
+criterion to arbitrary bipartitions of a proper Bell-type graph.
+
+\begin{corollary}\label{cor:converse}
+Equal strict inertia indices do not characterize bipartiteness,
+even among proper Bell-type graphs.
+\end{corollary}
+\begin{proof}
+For $G_4(1+z,z(1+z))$, \eqref{eq:coefficient} gives edges
+$\{1,2\},\{1,3\},\{2,3\},\{3,4\}$. The triangle prevents
+bipartiteness. Expansion at vertex $4$ gives determinant $1$.
+The four eigenvalues are nonzero, their product is positive, and
+their sum is zero; hence exactly two have each strict sign.
+\end{proof}
+This converse is not asserted in the posing source; the example
+distinguishes equal inertia from the stronger parity condition.
+
+\section{Coverage and verification}
+
+A proper Riordan graph is io-decomposable if its even-label induced
+graph is edgeless and its odd-label induced graph is isomorphic to
+$G_{\lceil n/2\rceil}(g,f)$ \cite[Definition 2.9, p.~6]{CJKM}.
+Our five-cycle fails this condition: labels $1,3,5$ induce one edge,
+whereas $G_3(1+z^3,z(1+z^3))$ is a two-edge path.
+Jung's earlier diameter counterexample \cite[p.~4]{Jung} concerns
+Conjecture 5.1, not the inertia question. The coverage is:
+\begingroup
+\small
+\begin{longtable}{@{}p{0.38\linewidth}p{0.57\linewidth}@{}}
+\toprule
+Source item & Coverage\\\midrule
+\endfirsthead
+\toprule Source item & Coverage\\\midrule
+\endhead
+Problem 6.11, p.~25 & Answered: no; Corollary~\ref{cor:answer}.\\
+Mwafise, README \S4.4 & Prior five-cycle example cited; its Bell-type
+representation and inertia are proved here.\\
+Lemma 2.6, p.~5; even-series observation, p.~25 & Reproved;
+prior proof Cheon et al., 2018. Finite-prefix converse proved in
+Proposition~\ref{prop:even}.\\
+Corollary 6.6, p.~24 & Reproved; prior proof Cheon et al., 2018.
+All-order sharpness in Corollary~\ref{cor:bound}.\\
+All-order cycle realization and smallest order & Not posed; proved in
+Theorem~\ref{thm:cycles} and Proposition~\ref{prop:minimal}.\\
+Equal-inertia converse & Not asserted in the source; fails for
+$G_4(1+z,z(1+z))$ (Corollary~\ref{cor:converse}).\\
+Pascal inertia observation, p.~25 & Source reports finite data through
+order $200$; an all-order extension is not covered.\\
+Conjecture 4.8, p.~18 & Not covered; maximum degree in the
+io-decomposable class.\\
+Conjecture 5.1, p.~21 & Prior counterexample to the diameter upper
+bound cited: Jung, 2019, p.~4. Not decided by the cycle argument.\\
+Conjectures 7.7 and 7.9, pp.~28--29 & Not covered; nullity in the
+io-decomposable class.\\
+Conjecture 8.11, p.~32 & Not covered; Catalan determinants.\\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\begingroup\sloppy
+\paragraph{Verification scope.}
+The pinned
+\href{https://github.com/the-omega-institute/trureturing/blob/79dfe4f731baccd42dd3c56cf6331a0ddd3cafdb/D5/S3/Combinatorics/SpectralGraph/RiordanBellInertiaRefutation.lean}{Lean source}
+defines \texttt{adjacency} by the coefficient rule and \texttt{claim}
+by the universal inequality over positive orders and integer formal
+series. In namespace \texttt{RiordanBellInertiaRefutation},
+\texttt{result} proves $\neg\texttt{claim}$.
+The private lemmas \texttt{adjacency\_witness}, \texttt{B\_det},
+\texttt{congruence} and \texttt{witness\_inertia} establish the
+five-vertex matrix, determinant, congruence and strict sign counts.
+The cycle family, minimality, sharpness, parity characterization and
+four-vertex converse example are written proofs, separate from that
+declaration. The exact-arithmetic checker and its finite ranges are
+specified in \texttt{README.md}.
+\par\endgroup
+
+\begin{thebibliography}{9}
+\bibitem{Mwafise}
+A. Mesinga Mwafise,
+\emph{riordan-graph-enumerator: exhaustive enumeration of unlabeled
+Riordan graphs}, v1.0.0 (26 October 2026), README \S4.4 and
+\texttt{docs/COMPUTATIONS.md}, \S1,
+\href{https://doi.org/10.5281/zenodo.23676629}{doi:10.5281/zenodo.23676629};
+\href{https://github.com/arnauldmwafise/riordan-graph-enumerator/blob/adef2ec6b5ab78a878911eb514e49188e3eca388/README.md\#44-self-complementary-riordan-graphs}{version-pinned example}.
+\bibitem{CJKM}
+G.-S. Cheon, J.-H. Jung, S. Kitaev and S. A. Mojallal,
+\emph{Riordan graphs II: Spectral properties},
+Linear Algebra Appl. \textbf{575} (2019), 174--215,
+\href{https://doi.org/10.1016/j.laa.2019.04.011}{doi:10.1016/j.laa.2019.04.011}.
+The question and locators refer to
+\href{https://arxiv.org/abs/1801.07021v1}{arXiv:1801.07021v1} (2018).
+\bibitem{BH}
+A. E. Brouwer and W. H. Haemers,
+\emph{Spectra of Graphs}, Universitext, Springer, 2012,
+\href{https://doi.org/10.1007/978-1-4614-1939-6}{doi:10.1007/978-1-4614-1939-6}.
+\bibitem{Jung}
+J.-H. Jung, \emph{Diameter of io-decomposable Riordan graphs of the
+Bell type}, \href{https://arxiv.org/abs/1901.11156v1}{arXiv:1901.11156v1}
+(2019).
+\end{thebibliography}
+\smallskip
+\noindent\small Licensed under Creative Commons Attribution 4.0 International
+(\href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}).
+\end{document}
