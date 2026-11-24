@@ -5,13 +5,15 @@
 Extending Mwafise's five-cycle example (26 October 2026, v1.0.0, README §4.4), we answer Problem 6.11 of Cheon, Jung, Kitaev and Mojallal, Riordan graphs II: Spectral properties, arXiv:1801.07021v1 (2018), p. 25, negatively: G_5(1+z^3,z(1+z^3)) is C_5 with inertia (3,2,0). The construction G_n(1+z^{n-2},z(1+z^{n-2}))=C_n yields counterexamples at every order 4q+1>=5. We prove minimality among all simple graphs, extend their even-series criterion to a finite-prefix characterization of bipartiteness for proper Bell-type graphs, and show that their absolute inertia bound is sharp at every order n>=2.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24488109](https://doi.org/10.5281/zenodo.24488109)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24488108](https://doi.org/10.5281/zenodo.24488108)
 - License: CC-BY-4.0
 - Version: 3
 - Mathesis record: [cheon-riordan-bell-inertia-611](https://mathesis-omega-research.apps.chrono-ai.fun/papers/cheon-riordan-bell-inertia-611?version=3)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). Extending Mwafise's cycle example to answer Cheon–Jung–Kitaev–Mojallal's Bell-type Riordan inertia question. Mathesis, version 3. https://mathesis-omega-research.apps.chrono-ai.fun/papers/cheon-riordan-bell-inertia-611?version=3
+Haobo Ma, Wenlin Zhang (2026). Extending Mwafise's cycle example to answer Cheon–Jung–Kitaev–Mojallal's Bell-type Riordan inertia question. Mathesis, version 3. https://doi.org/10.5281/zenodo.24488109
 
 ## Statement progress
 
