@@ -28,9 +28,9 @@
     "manuscript/metadata.json": "13e66fd90af45bd50e2a9f9c7b5531fb86f93dedabb4cc65979acfaab118fa41",
     "manuscript/note.tex": "0d2681b90a78588d6f776c63dd424b976566670e3e8110677bdfaa0bd8df8288",
     "manuscript/verify.py": "256d0ec224bf0d13f3b17f074aa8d83f60767ebb61cc1b4a583aed6098440126",
-    "paper.json": "0deb73f5b2eb80bf474adc090de15ba5d1a137a09b4f19b9255afd66187b1a90",
+    "paper.json": "8da71cf23877d30b35844bd05e102e8ace5e4773fd9dbe391f6e5615b314e307",
     "paper.pdf": "f5ca39ea52a83175404fbeea09d24d790efe0c9b452db8344f4db39a83af22e6",
     "source.archive": "afaa8ca5539f0eb34a2db472f35eee2806be746208ad2af8546fb27a75141883"
   },
-  "snapshot_identity": "5c92018adea0dc39cfc0dbfc5d7e6c9577ec5988da1f96dcd96dde43f5d7d068"
+  "snapshot_identity": "4825b9ad3ce4639213f460c7a5880896ce88028ff3547ebad4989d990aad486c"
 }

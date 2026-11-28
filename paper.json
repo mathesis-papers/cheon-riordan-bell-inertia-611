@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24488108",
     "current_version": 3,
     "doi": "10.5281/zenodo.24488109",
+    "kind": "note",
     "lean_source": {
       "revision": "79dfe4f731baccd42dd3c56cf6331a0ddd3cafdb",
       "url": "https://github.com/the-omega-institute/trureturing/blob/79dfe4f731baccd42dd3c56cf6331a0ddd3cafdb/D5/S3/Combinatorics/SpectralGraph/RiordanBellInertiaRefutation.lean"
@@ -55,10 +56,12 @@
     "title": "Extending Mwafise's cycle example to answer Cheon–Jung–Kitaev–Mojallal's Bell-type Riordan inertia question",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-24T02:38:05.008486167Z",
         "revision": "3",
-        "version": 3
+        "version": 3,
+        "version_label": null
       }
     ],
     "work": "cheon-riordan-bell-inertia-611"
